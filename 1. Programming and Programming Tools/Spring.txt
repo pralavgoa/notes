@@ -1,0 +1,12 @@
+2/11/2014
+
+Spring
+
+mvn --> archetype --> eclipse project --> add spring dependency
+
+--> create bean configuration file --> bean, set properties
+
+context = ClasspathXmlAppContext();
+context.getBean();
+
+Dependency Injection --> helps to choose configuration through xml

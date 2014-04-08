@@ -1,0 +1,6 @@
+12/27/2013
+
+git clone https://github.com/pralavgoa/notes.git --> direct clone a repository
+
+------------------
+Fork a git repo --> make changes --> send pull request --> merge if there are any conflicts

@@ -1,0 +1,24 @@
+12/27/2013
+
+Spring MVC
+
+	Annotations
+	
+	@Controller
+		@RequestMapping("/") --> class level
+		
+		@Autowired
+		@RequestMapping(method = RequestMethod.GET)
+		@ResponseBody
+		
+Test core and persistence configuration
+---------------------------------------
+
+@RundWith()
+@ContextConfiguration(classes={CoreConfig.class, Persistence.class) --> Configuration classes (eg. below)
+
+@Configuration
+	@Bean --> method that generates configures spring beans
+	@EnableWebMVC
+	@Component Scan(base packages = {" "})
+	

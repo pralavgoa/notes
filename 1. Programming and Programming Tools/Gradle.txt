@@ -1,0 +1,6 @@
+12/27/2013
+gradlew clean test
+
+:gradlew --> gradle + wrapper
+
+:clean and test are targets 
