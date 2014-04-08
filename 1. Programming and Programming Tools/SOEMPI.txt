@@ -1,0 +1,38 @@
+4/8/2014
+
+SOEMPI Tables
+-------------
+
+tbl_ds_* --> contain all the uploaded/sent datasets
+	-- it contains a person id field
+	-- fld_* are fields related to the data
+	
+	!!-- This might be the table that we can directly export and import
+
+tbl_link_* -->
+	
+	--left_person_id contains the person id from the dataset referred to as left
+	--right_person_id (similar as above)
+	--binary_vector contains the vector associated with how closely the fields are related
+	--continuous_vector similar to above but has decimal values
+	--weight the weight given to the match
+	--link_state whether it is a predicted match or a non-match
+	
+person_match --> contains the metadata of a match that has been performed
+	-- person_match_id is the primary key
+	-- match_title is the title supplied to the match, also the name of the generated table (without underscores)
+	-- left_dataset is the id of the dataset as mentioned in the dataset table
+	-- rigit_dataset similar as above
+	-- 3 fields with binary data related to the match and block configuration
+	-- total_records is the total nuber of record pairs
+	-- k and fill factor for the bloom filter
+	-- creater_id and date_created
+	
+dataset --> contains metadata about the imported/sent datasets
+	-- dataset_id
+	-- user_id
+	-- table_name --> name of the database table created for this dataset
+	-- file_name --> name of the file stored in the bin folder of jboss
+	-- total_records --> number of rows
+	-- imported_ind --> flags that indicates whether data has been imported
+	-- date_created
