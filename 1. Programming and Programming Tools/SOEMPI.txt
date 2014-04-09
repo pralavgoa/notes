@@ -1,5 +1,9 @@
 4/8/2014
 
+SOEMPI Software
+---------------
+
+
 SOEMPI Tables
 -------------
 
@@ -36,3 +40,18 @@ dataset --> contains metadata about the imported/sent datasets
 	-- total_records --> number of rows
 	-- imported_ind --> flags that indicates whether data has been imported
 	-- date_created
+	
+SOEMPI PLAN
+-----------
+
+1. Have a virtual machine image ready that if fully configured to run
+	--High configuration VM
+	--full installation of SOEMPI and related software
+	--make a configuration that is similar to the final experiments that we would conduct
+	--test using local linkage
+2. Make copies of this virtual machine image
+3. Send a copy to each of the data providers
+4. The data providers will export the data to a sql file and give it to us
+    --test this on one of the copies of VMs created above
+5. We import the data from these sql files, configure out data integrator and perform a match operation
+    --run this test

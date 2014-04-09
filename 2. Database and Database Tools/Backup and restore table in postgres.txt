@@ -1,0 +1,11 @@
+
+Backup
+
+	Right click table in pgadmin
+	click backup
+	give filename, format (plain), encoding (utf8) and click backup
+	open generated file in a text editor and check
+	
+Restore
+
+	psql -d openempi -h localhost -p 5432 -f /c/_Pralav/projects/SOEMPI/database\ stuff/table_backup.sql -U postgres
