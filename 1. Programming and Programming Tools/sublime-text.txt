@@ -1,0 +1,4 @@
+1. use regex to search and replace with ssss
+2. use multi select (cmnd+ctrl+G) to select ssss
+3. open text pastry (cmnd+option+n)
+4. type i and enter

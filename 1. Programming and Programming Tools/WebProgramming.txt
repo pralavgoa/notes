@@ -1,0 +1,4 @@
+1. Need html to describe the data being presented
+2. Need css to render the data presented properly
+3. Need javascript to take client-side interactions
+4. Client-side interactions talk to the server using a JSON API. Need to be on the same server to avoid cross-origin requests.
