@@ -1,0 +1,17 @@
+docker-compose.yml 
+	- its a file that has configuration for connecting different docker images, in a YML format
+	- you basically list "services", give them names, and specify their attributes
+	- the service attributes include
+		- how often to restart (maybe on pull)
+		- where is the build??
+		- which image to use (pulled from docker-hub?)
+		- containers name
+		- what ports to map
+		- which other services link to it
+		- where to put code
+
+the docker-compose uses docker files for each service
+	- docker file contains
+		- base image
+		- commands to run on base image to create image
+		- commands to run when image starts
