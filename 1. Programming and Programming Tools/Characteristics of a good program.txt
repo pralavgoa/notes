@@ -1,0 +1,9 @@
+1. Easy to setup
+2. Easy to configure using various configurations
+3. Easy to debug
+4. Easy to make code changes and update
+5. Version controlled code, easy to revert changes
+6. Tested code
+	a. New code doesnt break old code
+	b. New code does what its supposed to do
+	c. New code integrates well with the general codebase
