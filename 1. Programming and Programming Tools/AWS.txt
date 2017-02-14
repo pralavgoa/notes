@@ -1,0 +1,16 @@
+Amazon Lex
+- conversational bots like Alexa
+
+Amazon Polly
+- Text to speech
+
+Amazon Rekognition
+- image reconition service
+
+Amazon Machine Learning
+- Creates ML Models by finding patterns in the data.
+- Make predictions based on the model.
+- Process for model building
+	- data analysis
+	- model training
+	- evaluation
