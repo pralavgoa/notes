@@ -4,13 +4,16 @@
 */
 
 import java.util.Map;
+import java.util.Set;
 import java.util.HashMap;
+import java.util.HashSet;
 
 class Life{
 	private static final String TODAY = "Monday";
 	private static enum DAY_OF_WEEK {Monday,Tuesday,Wednesday,Thursday,Friday};
 	private static final String[] BIRTHDAY = {"1955","01","01"};
 	private static final Map<String,Boolean> IS_WEEKEND= new HashMap<>();
+	private static final Set<String> IS_VEGETARIAN_DAY = new HashSet<>();
 	
 	public static void main(String[] args){
 		System.out.println("This is my life");
@@ -28,6 +31,9 @@ class Life{
 			
 		}
 		checkIfWeekend(TODAY);
+
+		IS_VEGETARIAN_DAY.add("Monday");
+		checkIfVegetarian(TODAY);
 	}
 
 
@@ -41,6 +47,14 @@ class Life{
 			}
 		}else{
 			System.out.println("Today is a weekday");
+		}
+	}
+
+	public static void checkIfVegetarian(String today){
+		if(IS_VEGETARIAN_DAY.contains(today)){
+			System.out.println("Today is vegetarian");
+		}else{
+			System.out.println("Today is non vegetarian");
 		}
 	}
 }

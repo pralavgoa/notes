@@ -16,6 +16,13 @@ class Life:
 				print("Day is "+ BIRTHDAY[i])
 		Life.checkIfWeekend(TODAY)
 
+		IS_VEGETARIAN_SET={"Monday"}
+		if TODAY in IS_VEGETARIAN_SET:
+			print("Today is vegetarian")
+		else:
+			print("Today is non vegetarian")
+
+
 	@staticmethod
 	def checkIfWeekend(today):
 		IS_WEEKEND = {"Saturday":True, "Sunday":True}
