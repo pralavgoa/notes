@@ -1,0 +1,28 @@
+var s = "helLoAlel";
+
+print(s.constructor.toString());
+print(s.indexOf('l'));
+print(s.lastIndexOf('l'));
+print(s.search('l'));
+print(s.slice(0,s.length));
+print(s.slice(0,1));
+print(s.slice(0,-1));
+print(s.charAt(3));
+print(s.charCodeAt(5));
+print(s.concat("world","earth"));
+print(s.endsWith("A"));
+print(String.fromCharCode(65));
+print(s.includes("el"));
+print(s.match(/el/g));
+print(s.match(/el/g)[0]);
+print(s.repeat(2));
+print(s.replace(/el/g,"gl"));
+print(s.search(/el/g));
+print(s.split('A'));
+print(s.startsWith("he"));
+print(s.substr(2,4));
+print(s.substring(2,5));
+print(s.toLowerCase());
+print(s.toUpperCase());
+print(" lion ".trim());
+print(s.valueOf());
