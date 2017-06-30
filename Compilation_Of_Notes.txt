@@ -1,0 +1,160 @@
+***********************************************************
+*  A Compilation of Notes                                 *
+*  Computer Science, Programming and Software Development *
+*  Pralav Dessai                                          *
+***********************************************************
+
+*******************************************************************************
+
+Contents
+  Languages
+    Java
+    Python
+    Javascript
+    SQL/Databases
+    C/C++, Scala, Swift
+    Linux, Shell
+
+  Programming (Arrogant Straight Lion Stalked Queen Tiger Mating Giraffe)
+  	Arrays
+  		Basic and Dynamic
+  	Strings
+  	Linked Lists
+  		Single, double, skip
+  	Stacks
+  	Queues
+  	Trees
+  		BST, Cartesian, B-Tree, AVL, Red/Black, Splay
+  	Maps
+  		Hashtables/Dictionaries
+  	Graphs
+
+  Algorithm Concepts
+    Divide and Conquer (DC)
+    Sorting and Searching (S***)
+    Dynamic Programming (DyP)
+    Recursion (R)
+    Looping (Loo)
+
+  Coding and Math Concepts
+    Object Oriented Programming
+    Bit Manipulation
+    Probability, Statistics, Combinations
+    Brain Teasers
+
+  Architecture Concepts
+    Scalability and Memory
+    Testing
+    Full Stacks
+    Networking Security
+    Infrastructure and Networking
+
+  Programming Interviews
+*******************************************************************************
+Software Development
+
+  Design/Architect a system
+    Tech Stack
+      Metrics
+        Scalable
+        Reliable
+      Networking
+      Infrastructure
+	      Servers and Config
+	      Database
+	Contracts
+	  Interface
+	    REST
+	Codebase
+	  Adding/Updating/Understanding Code
+	  Testing Code
+	Testing the system
+	  Tools
+
+  Writing Code
+    IDE
+      Java - Eclipse, Intellij
+      Python - PyCharm
+      Scripts - Sublime Text
+      Javascript - Sublime Text
+      HTML+CSS - Sublime Text
+    References
+      Syntax
+      Libraries
+      Concepts (OOP, Recursion, Program Flow, Memory)
+  Assemble/Configure Code
+      Java
+        Spring
+          Boot
+          MVC 4
+          Security
+        Ant, Maven, Gradle
+      Python
+        Flask
+        Django
+        Pip, easy_install
+
+
+  Run Code
+    Intalls, Libraries, Paths, Config Files
+  Deploy Code
+	DevOps - Continuous Integration and Delivery
+	Docker
+	Infrastructure
+	  AWS
+	  Google Cloud  
+
+*******************************************************************************
+Programming Interviews
+
+  Structure of Code
+     ______________
+    | Global State |
+    |              |
+    |-OUT--IN-     |
+    |Local State   |
+    |Algos         |
+    |______________|
+
+    State - ASLSQTMG
+    Algos - DCS,DyP,R,Lo (Breakdown/Search Spaces)
+    TEST - Think Clearly, Examples, Slow Analysis, Talk, Test Everthing
+    SPEC - Simple Problems and Edge Cases
+*******************************************************************************
+Languages
+  Java
+    Files and IO - Read and write datastreams
+    String and Regex - Manipulate datastreams
+    Collections - represent and manipulate representations of concepts
+    App Execution Env - configure code and run
+    Logging and debugging - check logic
+    Type Metadata with Annotations 
+    - tell the system, and developer, what the code is expected to do
+    Persistence and serialization
+      Storing objects
+    Runtime Type and Reflection
+      - Decide code path based on type of the objects, determine the type
+    Multi threading and concurrency
+  Python
+    String and Collections
+    Modularity
+    Objects
+    Exceptions
+    Iterables
+    Classes
+    File and Resource Management
+    Shipping and Maintaining Code
+*******************************************************************************
+Spring
+  [1. Programming and Programming Tools > Spring.txt]
+*******************************************************************************
+Design/Architect a system
+
+  Interface
+    REST - GET, POST, PUT, PATCH, DELETE
+      - Tools for Collaborative Design, Testing, HTTP, Performance Testing, 
+        Monitoring
+  Architecture
+    Domain Centric, App Layer, Command and Queries, Functional Organization,
+    Microservices, Testable Architecture
+*******************************************************************************

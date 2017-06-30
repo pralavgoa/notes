@@ -1,4 +1,4 @@
-2/11/2014
+2/11/2014, 6/30/2017
 
 Spring
 
@@ -10,3 +10,72 @@ context = ClasspathXmlAppContext();
 context.getBean();
 
 Dependency Injection --> helps to choose configuration through xml
+
+Spring 4
+    - appcontext.xml and servlet-config.xml both in java now
+    - annotations tell spring what the java file is. Tomcat loads spring, 
+      spring searches for files that need to be objectified
+    - MVP, MVVM, MV* - Better for javascript apps, mobile and REST
+    - @Controller, @RestController, @Configuration, @EnableWebMVC
+    - @ComponentScan
+    - Controller has verbs or actions, convert user inptu to model,
+      access business logic, determine view to render, send model in view
+  MVC
+    - Config, Architecture, Controllers, Views, Build Out, Validation, REST and 
+      Ajax
+    - Struts (old) -> Tapestry (1 developer), Wicket (apache), GWT (learning 
+      curve), JSF (J2EE), SEAM (From JBoss), Stripes (lightweight)
+    - Spring MVC is lightweight, interface driven, uses POJOS, uses Dispatches
+      Front Controller pattern. Its an improvement over struts. 15 year old 
+      framework. DispatcherServlet, Controller/Command Pattern, Req Mapping,
+      ViewResolver (JSP), servlet config.xml, POJO, Bean is a pojo configured
+      by spring
+    - Java 8, Maven 3 - dependencies and archetypes, Spring STS or IntelliJ, 
+      Tomcat
+    - Request -> Front Controller -> Controller -> Model -> Controller ->
+      Front Controller -> View template
+    - Spring Boot - containerless
+  Maven
+    - has pom.xml with libraries and dependiencies. Pulls in the hierarchies
+    - Spring "beans" are a part of a library
+    - Archetype is a prototype of an app
+  Security
+    - Users in DB, Client integration, password storage, customizing, 
+      expressions, LDAP, HTTPS
+
+@Controller Class
+  @RequestMapping(value = "sub-url", method = RequestMethod.GET/POST) Method(model)
+    return a string that determines the view. put attributes in the model. use those
+    attributes in the jsp page using ${}
+
+Web.xml
+  Structure defined by xsd namespaces
+  gets loaded to configure server
+    defines servlets and their mappings
+WebAppInitializer interface
+  - onstartup()
+    - getContext() -> tell where config is
+
+View is in JSP or velocity of freemarker. ViewResolver is used to find view. web config points to beans which are autowired by type
+
+Tag lib are xml tags that can be used in jsp. these tags are automatically fixed with their models
+
+Static resources - configure dispatcher to route properly, even to static files
+
+POST
+  @RequestMapping
+  public String processEvent(@ModelAttribute("event") Event evernt) //bind post parameters to event object
+
+  return "event" or redirect -> goes out and back it or forward -> forwards in the same sesion
+
+@SessionAttributes("event") -> preserves session attributes across multiple requests from brwser
+
+internatialization -> use taglibs in jsps instead of actual messages
+
+Validation -> add range/etc directly to the model
+  change controller to validate model, add binding to capture results
+
+REST
+  ContentNegotiatingViewResolver -> config for xml vs json //Now replaced by @RestController
+
+  Dispatcher servlet -> add mapping to json and xml based on return type
