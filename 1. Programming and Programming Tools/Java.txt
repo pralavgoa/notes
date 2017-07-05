@@ -1,0 +1,13 @@
+*******************************************************************************
+Multithreading and Concurrency
+
+Process - has resources (memory) and atleast 1 thread
+
+-----------------------------------------
+|       |Thread 0 ------------------>|
+|Memory |   Thread 1 ------------->|
+|       |
+-----------------------------------------
+
+multithreading helps use CPUs fully
+
