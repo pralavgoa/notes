@@ -1,0 +1,48 @@
+Videos:
+  PluralSight
+
+Online Text Resources:
+  Oracle Documentation and tutorials
+  Library documentation
+  Stack Overflow
+
+Books:
+  Java Concurrency in Practice - Goetz
+
+*******************************************************************************
+Multithreading and Concurrency
+
+Process - has resources (memory) and atleast 1 thread
+Multitasking - running many processes on same machine. Processes are independent.
+
+Time Slicing - each processes allocated certain time on cpu
+
+Multithreading - share resources, managed by JVM scheduler. Have to find optimum number of threads by testing. Lookout for out-of-memory,starvation,cache inconsistencies on processors
+
+Concurrency - break task into smaller pieces and run parallely.
+
+Examples: GUI with background threads
+
+-----------------------------------------
+|       |Thread 0 ------------------>|
+|Memory |   Thread 1 ------------->|
+|       |
+-----------------------------------------
+
+multithreading helps use CPUs fully
+
+Thread Class
+  call start() will spawn a new thread
+  Daemon threads can be shutdown anytime
+  or create thread, and pass a runnable to constructor, then start
+Java Memory Model
+  Sharing data across threads
+Mutual Exclusion and liveness issues
+  Race conditions, deadlocks
+Thread signalling and thread pools
+  Producers and consumers
+
+Keywords
+	Futures, Monitors or Locks, TimeUnit, jstack, jconsole, Interrupt mechanism, Thread local
+
+*******************************************************************************
